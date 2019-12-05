@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "produto")
+@Table(name = "Produto")
 @Getter
 @Setter
 @EqualsAndHashCode
@@ -23,7 +23,7 @@ public class Produto implements Serializable {
     private String nome;
     private Double preco;
 
-    @Column(name = "criadoEm")
+    @Column(name = "criado_Em")
     @Temporal(TemporalType.DATE)
     private Date criadoEm;
 }
