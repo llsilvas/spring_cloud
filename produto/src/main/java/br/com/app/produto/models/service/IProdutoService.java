@@ -1,0 +1,11 @@
+package br.com.app.produto.models.service;
+
+import br.com.app.produto.models.entity.Produto;
+
+import java.util.List;
+
+public interface IProdutoService {
+
+    public List<Produto> findAll();
+    public Produto findById(Long id);
+}
