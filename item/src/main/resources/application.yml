@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: servico-itens
+server:
+  port: 8002
