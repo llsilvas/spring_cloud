@@ -3,6 +3,7 @@ package br.com.app.item.service;
 import br.com.app.item.models.Item;
 import br.com.app.item.models.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,7 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Service
+@Service("itemService")
+@Primary
 public class ItemServiceImpl implements IItemService{
 
     @Autowired
