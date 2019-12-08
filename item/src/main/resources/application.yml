@@ -3,3 +3,8 @@ spring:
     name: servico-itens
 server:
   port: 8002
+
+produto:
+  ribbon:
+    listOfServers: localhost:8001, localhost:9001
+

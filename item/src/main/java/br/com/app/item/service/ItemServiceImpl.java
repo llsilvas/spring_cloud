@@ -14,7 +14,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service("itemService")
-@Primary
 public class ItemServiceImpl implements IItemService{
 
     @Autowired
@@ -22,7 +21,7 @@ public class ItemServiceImpl implements IItemService{
 
     @Override
     public List<Item> findAll() {
-        List<Produto> produtos = Arrays.asList(clientRest.getForObject("http://localhost:8001/listar", Produto[].class));
+        List<Produto> produtos = Arrays.asList(clientRest.getForObject("http://produto/listar", Produto[].class));
 
         return produtos.stream().map(produto -> new Item(produto, 1)).collect(Collectors.toList());
     }
@@ -31,7 +30,7 @@ public class ItemServiceImpl implements IItemService{
     public Item findById(Long id, Integer quantidade) {
         Map<String, String> pathVariales = new HashMap<String, String>();
         pathVariales.put("id", id.toString());
-        Produto produto = clientRest.getForObject("http://localhost:8001/ver/{id}", Produto.class, pathVariales);
+        Produto produto = clientRest.getForObject("http://produto:8001/ver/{id}", Produto.class, pathVariales);
         return new Item(produto, quantidade);
     }
 }

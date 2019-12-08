@@ -18,5 +18,5 @@ public class Produto implements Serializable {
     private String nome;
     private Double preco;
     private Date criadoEm;
-
+    private Integer port;
 }
