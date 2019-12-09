@@ -1,10 +1,16 @@
 spring:
   application:
-    name: servico-itens
+    name: itens
 server:
   port: 8002
 
-produto:
-  ribbon:
-    listOfServers: localhost:8001, localhost:9001
+#produto:
+#  ribbon:
+#    listOfServers: localhost:8001, localhost:9001
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 
