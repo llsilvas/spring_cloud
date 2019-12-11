@@ -38,6 +38,12 @@ public class ProdutoController {
         Produto produto = produtoService.findById(id);
         //produto.setPort(Integer.valueOf(environment.getProperty("server.port")));
         produto.setPort(port);
+
+//        try {
+//            Thread.sleep(2000L);
+//        }catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
         return produto;
     }
 }
