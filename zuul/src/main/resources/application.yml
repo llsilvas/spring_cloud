@@ -16,7 +16,7 @@ zuul:
       path: /api/produto/**
 
     itens:
-      serviceId: itens
+      serviceId: item
       path: /api/itens/**
 
 

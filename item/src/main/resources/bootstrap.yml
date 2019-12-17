@@ -1,8 +1,13 @@
 spring:
   application:
-    name: itens
-server:
-  port: 8002
+    name: item
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    active: dev
+
+
 
 #produto:
 #  ribbon:
@@ -19,4 +24,8 @@ eureka:
 #ribbon:
 #  ConnectTimeout: 3000
 #  ReadTimeout: 10000
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
