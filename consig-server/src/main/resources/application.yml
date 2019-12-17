@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: file:///E:/Dev/config
+          uri: https://github.com/llsilvas/config.git
 server:
   port: 8888
