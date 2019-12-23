@@ -2,6 +2,7 @@ package br.com.app.item.service;
 
 import br.com.app.item.clientes.ProdutoClientRest;
 import br.com.app.item.models.Item;
+import br.com.app.item.models.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
@@ -24,5 +25,20 @@ public class ItemServiceFeign implements IItemService{
     @Override
     public Item findById(Long id, Integer quantidade) {
         return new Item(clientRest.detalhe(id), quantidade);
+    }
+
+    @Override
+    public Produto save(Produto produto) {
+        return null;
+    }
+
+    @Override
+    public Produto update(Produto produto, Long id) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+
     }
 }
