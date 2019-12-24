@@ -24,7 +24,7 @@ import java.util.Map;
 @RestController
 public class ItemController {
     @Autowired
-    @Qualifier("itemService")
+    @Qualifier("serviceFeign")
     private IItemService itemService;
 
     private static Logger log = LoggerFactory.getLogger(ItemController.class);
