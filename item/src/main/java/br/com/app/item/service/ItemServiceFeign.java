@@ -1,8 +1,8 @@
 package br.com.app.item.service;
 
+import br.com.app.commons.models.entity.Produto;
 import br.com.app.item.clientes.ProdutoClientRest;
 import br.com.app.item.models.Item;
-import br.com.app.item.models.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

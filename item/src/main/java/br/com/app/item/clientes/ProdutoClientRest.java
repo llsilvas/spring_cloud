@@ -1,6 +1,6 @@
 package br.com.app.item.clientes;
 
-import br.com.app.item.models.Produto;
+import br.com.app.commons.models.entity.Produto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

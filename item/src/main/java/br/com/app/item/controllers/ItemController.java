@@ -1,10 +1,9 @@
 package br.com.app.item.controllers;
 
+import br.com.app.commons.models.entity.Produto;
 import br.com.app.item.models.Item;
-import br.com.app.item.models.Produto;
 import br.com.app.item.service.IItemService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

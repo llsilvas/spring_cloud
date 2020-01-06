@@ -1,7 +1,7 @@
 package br.com.app.item.service;
 
+import br.com.app.commons.models.entity.Produto;
 import br.com.app.item.models.Item;
-import br.com.app.item.models.Produto;
 
 import java.util.List;
 

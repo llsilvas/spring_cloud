@@ -1,6 +1,7 @@
 package br.com.app.produto.models.service;
 
-import br.com.app.produto.models.entity.Produto;
+
+import br.com.app.commons.models.entity.Produto;
 
 import java.util.List;
 

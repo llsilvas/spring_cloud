@@ -1,6 +1,6 @@
 package br.com.app.produto.controllers;
 
-import br.com.app.produto.models.entity.Produto;
+import br.com.app.commons.models.entity.Produto;
 import br.com.app.produto.models.service.IProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

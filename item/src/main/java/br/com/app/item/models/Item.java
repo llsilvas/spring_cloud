@@ -1,5 +1,6 @@
 package br.com.app.item.models;
 
+import br.com.app.commons.models.entity.Produto;
 import lombok.*;
 
 @Getter

@@ -1,7 +1,8 @@
 package br.com.app.produto.models.service;
 
+import br.com.app.commons.models.entity.Produto;
 import br.com.app.produto.models.dao.ProdutoDao;
-import br.com.app.produto.models.entity.Produto;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
