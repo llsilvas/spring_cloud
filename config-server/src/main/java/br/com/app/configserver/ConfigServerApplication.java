@@ -1,4 +1,4 @@
-package br.com.app.consigserver;
+package br.com.app.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class ConsigServerApplication {
+public class configServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsigServerApplication.class, args);
+        SpringApplication.run(configServerApplication.class, args);
     }
 
 }
