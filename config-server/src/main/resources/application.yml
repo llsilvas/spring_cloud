@@ -6,5 +6,6 @@ spring:
       server:
         git:
           uri: https://github.com/llsilvas/config.git
+      fail-fast: true
 server:
   port: 8888
