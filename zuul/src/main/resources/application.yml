@@ -19,7 +19,9 @@ zuul:
       serviceId: item
       path: /api/itens/**
 
-
+    usuarios:
+      serviceId: usuarios
+      path: /api/usuarios/**
 #hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
 #ribbon:
 #  ConnectTimeout: 3000
